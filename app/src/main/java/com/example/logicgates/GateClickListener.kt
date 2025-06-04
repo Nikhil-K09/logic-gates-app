@@ -1,5 +1,4 @@
 package com.example.logicgates
 
-class Book {
-
+class GateClickListener {
 }
