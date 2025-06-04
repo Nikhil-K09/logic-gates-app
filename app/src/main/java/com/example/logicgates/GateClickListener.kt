@@ -1,4 +1,7 @@
 package com.example.logicgates
 
-class GateClickListener {
+interface GateClickListener {
+    fun onClick(gate:Gate){
+
+    }
 }

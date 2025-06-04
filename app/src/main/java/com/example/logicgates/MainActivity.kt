@@ -1,5 +1,6 @@
 package com.example.logicgates
 
+import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
 import android.view.View
@@ -12,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import com.example.logicgates.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), GateClickListener {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,8 +29,13 @@ class MainActivity : AppCompatActivity() {
         val mainActivity=this
         binding.recyclerView.apply {
             layoutManager=GridLayoutManager(applicationContext,2)
-            adapter=CardAdapter(gatelist)
+            adapter=CardAdapter(gatelist,mainActivity)
         }
+    }
+    override fun onClick(gate:Gate){
+        val intent=Intent(applicationContext,DetailActivity::class.java)
+        intent.putExtra(GATE_ID_EXTRA,gate.id)
+        startActivity(intent)
     }
 
     private fun populateGates() {
