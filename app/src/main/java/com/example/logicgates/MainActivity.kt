@@ -42,48 +42,76 @@ class MainActivity : AppCompatActivity(), GateClickListener {
         val gate1=Gate(
             R.drawable.and,
             title="AND Gate",
-            description = "adddddd"
+            description = "Definition: Outputs true (1) only when all inputs are true.\n" +
+                    "\n" +
+                    "Formula: A · B\n" +
+                    "\n" +
+                    "Example: 1 AND 1 = 1"
         )
         gatelist.add(gate1)
 
         val gate2=Gate(
             R.drawable.or,
             title="OR Gate",
-            description = "adddddd"
+            description = "Definition: Outputs true (1) if at least one input is true.\n" +
+                    "\n" +
+                    "Formula: A + B\n" +
+                    "\n" +
+                    "Example: 0 OR 1 = 1"
         )
         gatelist.add(gate2)
 
         val gate3=Gate(
             R.drawable.not,
             title="NOT Gate",
-            description = "adddddd"
+            description = "Definition: Inverts the input; outputs true if input is false and vice versa.\n" +
+                    "\n" +
+                    "Formula: ¬A or A̅\n" +
+                    "\n" +
+                    "Example: NOT 0 = 1"
         )
         gatelist.add(gate3)
 
         val gate4=Gate(
             R.drawable.nand,
             title="NAND Gate",
-            description = "adddddd"
+            description = "Definition: Outputs false (0) only when all inputs are true.\n" +
+                    "\n" +
+                    "Formula: ¬(A · B)\n" +
+                    "\n" +
+                    "Example: 1 NAND 1 = 0"
         )
         gatelist.add(gate4)
 
         val gate5=Gate(
             R.drawable.nor,
             title="NOR Gate",
-            description = "adddddd"
+            description = "Definition: Outputs true (1) only when all inputs are false.\n" +
+                    "\n" +
+                    "Formula: ¬(A + B)\n" +
+                    "\n" +
+                    "Example: 0 NOR 0 = 1"
         )
         gatelist.add(gate5)
         val gate6=Gate(
             R.drawable.xor,
             title="XOR Gate",
-            description = "adddddd"
+            description = "Definition: Outputs true (1) when inputs are different.\n" +
+                    "\n" +
+                    "Formula: A ⊕ B\n" +
+                    "\n" +
+                    "Example: 1 XOR 0 = 1"
         )
         gatelist.add(gate6)
 
         val gate7=Gate(
             R.drawable.xnor,
             title="XNOR Gate",
-            description = "adddddd"
+            description = "Definition: Outputs true (1) when inputs are the same.\n" +
+                    "\n" +
+                    "Formula: ¬(A ⊕ B)\n" +
+                    "\n" +
+                    "Example: 1 XNOR 1 = 1"
         )
         gatelist.add(gate7)
 

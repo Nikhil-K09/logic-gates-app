@@ -12,7 +12,7 @@
         android:src="@drawable/and"
         android:adjustViewBounds="true"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:contentDescription="@string/cover"
         android:layout_width="200dp"
         android:layout_height="wrap_content"/>
@@ -24,17 +24,18 @@
         android:gravity="center"
         style="@style/TEXT"
         android:text="@string/title_place_holder"
-        android:textSize="18sp"
+        android:textSize="25sp"
         android:lines="2"
         android:textStyle="bold"/>
     <TextView
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        style="@style/TEXT"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        style="@style/DESCRIPTION"
         android:text="@string/title_place_holder"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:layout_marginTop="10dp"
         android:textStyle="bold"/>
 </LinearLayout>
