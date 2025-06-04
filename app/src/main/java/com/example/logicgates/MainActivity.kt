@@ -1,19 +1,18 @@
 package com.example.logicgates
 
 import android.content.Intent
-import android.graphics.Rect
+
 import android.os.Bundle
-import android.view.View
+import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import com.example.logicgates.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity(), GateClickListener {
+
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +24,7 @@ class MainActivity : AppCompatActivity(), GateClickListener {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         populateGates()
         val mainActivity=this
         binding.recyclerView.apply {
