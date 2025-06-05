@@ -8,29 +8,38 @@
     android:orientation="vertical"
     style="@style/SCREEN"
     tools:context=".DetailActivity">
-    <ImageView
-        android:id="@+id/cover"
-        android:src="@drawable/and"
-        android:adjustViewBounds="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        style="@style/IMAGEBG"
-        android:padding="2dp"
-        android:contentDescription="@string/cover"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/title"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        style="@style/TEXT"
-        android:textColor="@color/orange"
-        android:text="@string/title_place_holder"
-        android:textSize="25sp"
-        android:lines="2"
-        android:textStyle="bold"/>
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginHorizontal="15dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/TEXT"
+            android:textColor="@color/orange"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:text="@string/title_place_holder"
+            android:textSize="30sp"
+            android:lines="2"
+            android:layout_weight="2"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/cover"
+            android:src="@drawable/and"
+            android:adjustViewBounds="true"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            style="@style/IMAGEBG"
+            android:padding="2dp"
+            android:contentDescription="@string/cover"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
     <TextView
         android:id="@+id/description"
         android:layout_width="match_parent"
@@ -40,14 +49,14 @@
         style="@style/DESCRIPTION"
         android:text="@string/title_place_holder"
         android:textSize="18sp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="35dp"
         android:textStyle="bold"/>
     <ImageView
         android:id="@+id/truth_table"
         android:src="@drawable/and_truth_table"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:gravity="left"
         android:layout_marginLeft="20dp"
         android:contentDescription="@string/truth_table"
@@ -66,16 +75,15 @@
 
     <!--for SIMULATION-->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp">
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginLeft="20dp"
             android:layout_gravity="center_vertical">
 
             <ToggleButton
