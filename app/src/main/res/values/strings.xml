@@ -3,5 +3,6 @@
     <string name="cover">Cover</string>
     <string name="title_place_holder">title_place_holder</string>
     <string name="truth_table">truth_table</string>
+    <string name="simulate">simulate</string>
 
 </resources>

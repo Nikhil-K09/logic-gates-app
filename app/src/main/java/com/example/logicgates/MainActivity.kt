@@ -49,7 +49,8 @@ class MainActivity : AppCompatActivity(), GateClickListener {
                     "Example: 1 AND 1 = 1\n"+
                     "\n" +
                     "Truth Table:",
-            R.drawable.and_truth_table
+            R.drawable.and_truth_table,
+            R.drawable.and,
         )
         gatelist.add(gate1)
 
@@ -63,7 +64,8 @@ class MainActivity : AppCompatActivity(), GateClickListener {
                     "Example: 0 OR 1 = 1\n"+
                     "\n" +
                     "Truth Table:",
-            R.drawable.or_truth_table
+            R.drawable.or_truth_table,
+            R.drawable.or,
         )
         gatelist.add(gate2)
 
@@ -77,7 +79,8 @@ class MainActivity : AppCompatActivity(), GateClickListener {
                     "Example: NOT 0 = 1\n"+
                     "\n" +
                     "Truth Table:",
-            R.drawable.not_truth_table
+            R.drawable.not_truth_table,
+            R.drawable.not,
         )
         gatelist.add(gate3)
 
@@ -91,7 +94,8 @@ class MainActivity : AppCompatActivity(), GateClickListener {
                     "Example: 1 NAND 1 = 0\n"+
                     "\n" +
                     "Truth Table:",
-            R.drawable.nand_truth_table
+            R.drawable.nand_truth_table,
+            R.drawable.nand,
         )
         gatelist.add(gate4)
 
@@ -105,7 +109,8 @@ class MainActivity : AppCompatActivity(), GateClickListener {
                     "Example: 0 NOR 0 = 1\n"+
                     "\n" +
                     "Truth Table:",
-            R.drawable.nor_truth_table
+            R.drawable.nor_truth_table,
+            R.drawable.nor,
         )
         gatelist.add(gate5)
         val gate6=Gate(
@@ -118,7 +123,8 @@ class MainActivity : AppCompatActivity(), GateClickListener {
                     "Example: 1 XOR 0 = 1\n"+
                     "\n" +
                     "Truth Table:",
-            R.drawable.xor_truth_table
+            R.drawable.xor_truth_table,
+            R.drawable.xor,
         )
         gatelist.add(gate6)
 
@@ -132,7 +138,8 @@ class MainActivity : AppCompatActivity(), GateClickListener {
                     "Example: 1 XNOR 1 = 1\n"+
                     "\n" +
                     "Truth Table:",
-            R.drawable.xnor_truth_table
+            R.drawable.xnor_truth_table,
+            R.drawable.xnor,
         )
         gatelist.add(gate7)
 
