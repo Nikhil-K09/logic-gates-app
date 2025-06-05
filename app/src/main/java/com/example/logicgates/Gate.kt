@@ -5,5 +5,6 @@ class Gate (
     var cover:Int,
     var title:String,
     var description:String,
+    var truth_table:Int,
     var id:Int? =gatelist.size
 )

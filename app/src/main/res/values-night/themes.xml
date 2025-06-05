@@ -11,7 +11,7 @@
     <!-- Dark mode -->
     <!-- screen bg if Dark mode on -->
     <style name="SCREEN">
-        <item name="android:background">#2A2929</item>
+        <item name="android:background">#141218</item>
     </style>
     <!-- text bg if Dark mode on -->
     <style name="TEXT">
@@ -29,6 +29,10 @@
 
     <style name="OUTERCARD">
         <item name="android:background">#FFF</item>
+    </style>
+
+    <style name="IMAGEBG">
+        <item name="android:background">@color/orange</item>
     </style>
 
     <style name="DESCRIPTION">

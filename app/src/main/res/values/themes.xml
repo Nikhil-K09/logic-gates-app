@@ -11,7 +11,7 @@
     <!-- Light mode -->
     <!-- screen bg if light mode on -->
     <style name="SCREEN">
-        <item name="android:background">#FFF</item>
+        <item name="android:background">@color/frost_white</item>
     </style>
     <!-- text bg if light mode on -->
     <style name="TEXT">
@@ -26,9 +26,12 @@
     <style name="TOPBAR">
         <item name="android:textColor">#313131</item>
     </style>
+    <style name="IMAGEBG">
+        <item name="android:background">@color/frost_white</item>
+    </style>
 
     <style name="DESCRIPTION">
-        <item name="android:textColor">#757575</item>
+        <item name="android:textColor">@color/darkGrey</item>
     </style>
 
     <style name="OUTERCARD">

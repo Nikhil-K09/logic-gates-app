@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    style="@style/SCREEN"
     tools:context=".DetailActivity">
     <ImageView
         android:id="@+id/cover"
@@ -13,6 +14,8 @@
         android:adjustViewBounds="true"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
+        style="@style/IMAGEBG"
+        android:padding="2dp"
         android:contentDescription="@string/cover"
         android:layout_width="200dp"
         android:layout_height="wrap_content"/>
@@ -23,6 +26,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         style="@style/TEXT"
+        android:textColor="@color/orange"
         android:text="@string/title_place_holder"
         android:textSize="25sp"
         android:lines="2"
@@ -38,4 +42,15 @@
         android:textSize="18sp"
         android:layout_marginTop="10dp"
         android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/truth_table"
+        android:src="@drawable/and_truth_table"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/truth_table"
+        android:adjustViewBounds="true"/>
+
 </LinearLayout>

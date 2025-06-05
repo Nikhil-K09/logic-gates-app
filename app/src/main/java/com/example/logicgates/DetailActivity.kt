@@ -25,6 +25,7 @@ class DetailActivity : AppCompatActivity() {
             binding.cover.setImageResource(gate.cover)
             binding.title.text=gate.title
             binding.description.text=gate.description
+            binding.truthTable.setImageResource(gate.truth_table)
 
         }
     }
