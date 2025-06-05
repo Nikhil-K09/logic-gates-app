@@ -43,6 +43,15 @@
         <item name="android:background">@color/orange</item>
     </style>
 
+    <style name="SIMBUTTONS">
+        <item name="android:textColorLink">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="SIMRESULT">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/nightGrey</item>
+    </style>
+
     <style name="CARD">
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:background">@color/orange</item>
